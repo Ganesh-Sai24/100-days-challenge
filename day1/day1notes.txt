@@ -1,0 +1,68 @@
+------------DAY_1---------------
+
+. WORKING WITH VARIABLES IN POTHON TO MANAGE DATA
+.PRINTING Commenting debugging string manipulation and variables
+
+task is to generate a band name generator program
+
+print("hello world")
+hello world
+the file location is : C:\Users\ganes\PycharmProjects\pythonProject4\.venv\Scripts\python.exe C:\Users\ganes\PycharmProjects\pythonProject4\day1.py 
+
+
+~ indicates to have a new line
+"\n" : it leads us to a new line
+      eg:print("hello world!\nhello world!")
+           hello world!
+           hello world!
+within the print statement we can also concatenate the strings  
+    i.e print("hello" + "world!")
+      o/p: helloworld!
+    2.i.e print("hello" +" "+"world!")
+      o/p: hello world!
+
+
+python has indent feature 
+if we miss align the code it rises INDENTATION ERROR
+
+input: it is the keyword where it accepts any kind of input from the user
+ 	input("what is your name?")
+	what is your name?ganesh
+-->print("hello "+ input("what is ur name?"))
+what is ur name?ganesh
+hello ganesh	
+--> by using "#" we can write comments
+-->  ctrl + /  : can make a line of code to a comment
+
+
+to store the data temporarily within the code we use varuiables
+  eg: name = input("what is ur name?")
+	print(name)
+o/p: what is ur name? ganesh
+     ganesh
+
+
+we can alsoassign values to the variables i.e  name="ganesh"
+
+case: name="ganesh"
+      print(name)
+      name="ramu"
+      print(name) 
+the o/p is :  ganesh
+	      ramu
+here same variable contains the 2 diff values
+
+but in this case
+name="ganesh"
+name="ramu"
+print(name)
+o/p : ramu 
+coz of priority of the assignment
+
+to get the length of a string or value in variable "len()" is used
+
+	eg: name="ganesh sai alla"
+                   print(len(name))
+
+		o/p: 15
+we will get same o/p as : print(len(input("your name?")))
