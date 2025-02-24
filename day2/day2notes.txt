@@ -1,0 +1,121 @@
+--------TO DEVELOP TIP CALCULATOR----------
+
+UNDERSTANDING DATATYPES AND STRING MANIPULATION
+
+#subscripting
+i/p : print("hello"[0])
+o/p : h
+as the indexing starts from 0...
+i/p : print("hello"[4])
+o/p : o
+i/p : print("hello"[-1])  # to get last character 
+o/p : o
+
+if we place anything within the " "  it is considered as string
+print("123"+"456")
+o/p : 123456
+
+#integer
+
+i/p : print(123,456,789)
+o/p : 123 456 789
+
+i/p : print(123_456_789)
+o/p : 123456789
+
+#float numbers
+
+print(1.43)
+1.43
+
+#boolean  this has inly two values that is either "true" or "false"
+
+note : len() wont work for integers 
+
+to check the datatype of any particular variable or object we use "type()" function  
+   eg: print(type("hello"))
+    o/p: <class 'str'>  
+
+##type casting :
+it is the process of converting or changing one datatype to another datatype
+print(int("123")+int("123"))
+o/p: 246
+tough "123" is string we casted it to as integer type.
+
+
+name=input("Enter your name: ")
+length = len(name)
+print("Number of letters in your name: ", length)
+
+o/p:  Enter your name: ganesh sai
+Number of letters in your name:  10
+
+python implicitly consider a number in divison as float type.
+but while performing floor divison it results integer
+
+
+when we have multiple arthimetic operations we follow  PEMDAS  rule
+paranthesis
+exponent
+multiplication
+division
+addition
+subtraction
+
+let x=123.43435546
+i/p: print(round(123.43435546))
+o/p: 123
+ round()  fxn accepts 2 inputs that are number want to round & no.of digits want to round
+ 
+
+Assignmennt Operators : 
+	
++=
+-=
+*=
+/=
+
+score = 0
+
+# User scores a point
+score += 1
+print(score)
+
+#Also
+score -= 1
+score *= 2
+score /= 2
+
+score = 0
+height = 1.8
+is_winning = True
+
+print(f"Your score is = {score}, your height is {height}. You are winning is {is_winning}")
+
+
+ o/p : 1
+       Your score is = 0, your height is 1.8. You are winning is True
+
+
+final project of day_2:
+
+
+	print("Welcome to the tip calculator!")
+bill = float(input("What was the total bill? $"))
+tip = int(input("What percentage tip would you like to give? 10 12 15 "))
+people = int(input("How many people to split the bill? "))
+tip_as_percent = tip / 100
+total_tip_amount = bill * tip_as_percent
+total_bill = bill + total_tip_amount
+bill_per_person = total_bill / people
+final_amount = round(bill_per_person, 2)
+print(f"Each person should pay: ${final_amount}")
+
+o/p:	Welcome to the tip calculator!
+What was the total bill? $500
+What percentage tip would you like to give? 10 12 15 10
+How many people to split the bill? 5
+Each person should pay: $110.0
+
+
+	
